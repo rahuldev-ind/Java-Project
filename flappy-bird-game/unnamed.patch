@@ -1,0 +1,18 @@
+Index: src/FlappyBird.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/FlappyBird.java b/src/FlappyBird.java
+--- a/src/FlappyBird.java
++++ b/src/FlappyBird.java	(date 1752223372563)
+@@ -201,6 +201,9 @@
+                 veloCityY = 0;
+                 pipes.clear();
+                 score = 0;
++                gameOver = false;
++                gameloop.start();
++                placePipesTimer.start();
+             }
+         }
+     }
